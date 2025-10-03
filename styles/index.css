@@ -20,7 +20,7 @@ html, body {
 }
 
 body {
-  background-color: rgb(229, 229, 230);
+  background-color: rgb(255, 255, 255);
 }
 
 button {
@@ -49,24 +49,25 @@ button {
 
 .header {
   position: sticky;
-  /*
-  top: 47.2px;
-  */
+  top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-  height: 72px;
+  height: 65px;
   width: 100%;
   padding: 0 12px;
   box-sizing: border-box;
-  background-color: #f0f0f0;
-  border-bottom: 1.5px solid #ddd9d9;
-  box-shadow: 0 1.5px 3px rgba(82, 82, 82, 0.15);
+  background-color: rgb(255, 255, 255);
 }
+
+/*
+.scrolled {
+  box-shadow: 0 5px 5px rgba(82, 82, 82, 0);
+}
+*/
 
 .header-content {
   display: flex;
-  align-items: stretch;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -97,7 +98,7 @@ button {
   display: flex;
   column-gap: 6px;
   align-items: center; 
-  justify-content:space-between;
+  justify-content: center;
   height: 100%;
 }
 
@@ -132,34 +133,38 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 12px;
   height: 24px;
-  width: 100%;
+  width: auto;;
   padding: 0 12px;
+  margin-left: 18px;
   box-sizing: border-box;
-  background-color: #f0f0f0;
-  border-bottom: 1.5px solid #ddd9d9;
-  box-shadow: 0 1.5px 10px rgba(82, 82, 82, 0.15);
 }
 
 .navigation-menu button{
+  all: unset;
+  display: flex;
+  align-items: center;
   border: none;
   padding: 2px 6px;
-  transition: all 0.2s ease;
+  font-family: ubuntu;
+  font-weight: 400;
+  font-size: 15px;
+  transition: color 0.2s ease, filter 0.2s ease;
 }
 
 .navigation-menu button:hover {
-  background-color: rgb(198, 198, 198);
-  border-radius: 5px;
+  color: rgb(120, 120, 120);
+  filter: invert(45%) sepia(4%) saturate(96%) hue-rotate(19deg) brightness(103%) contrast(92%);
 }
 
 .drop-down-icon {
-  height: 14px;
+  all: unset;
+  position: relative;
+  height: 22px;
+  width: 22px;
   background-color: transparent;
-}
-
-.drop-down-icon:hover {
-  background-color: rgb(203, 203, 203);
 }
 
 .hero-container {
@@ -171,8 +176,6 @@ button {
   display: flex;
   flex-direction: column;
   height: 340px;
-  border-radius: 5px;
-  background-color: rgb(122, 178, 122);
 }
 
 .hero-content {
@@ -228,7 +231,7 @@ button {
   border: none;
   outline: none;
   border-radius: 18px;
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(154, 162, 236);
 }
 
 .hero-details {
@@ -262,6 +265,22 @@ button {
   padding:7px 10px;
   border: none;
   border-radius: 5px;
+  background-color: rgb(87, 185, 185);
+}
+
+.hero-image-container {
+  position: absolute;
+  top: 125px;
+  right: 12px;
+  height: 270px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hero-image {
+  height: 100%;
+  font-weight: 100%;
+  object-fit: cover;
 }
 
 .collections-container {
@@ -307,30 +326,13 @@ button {
 }
 
 .perfumes-display-container-content {
-  /*
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(15px, 3vw, 30px);
-  padding: clamp(15px, 4vw, 40px);
-  max-width: 2000px;
-  margin: 0 auto;
-  */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(max(140px, 15%), 1fr));
   gap: clamp(15px, 3vw, 30px);
   padding: clamp(10px, 4vw, 20px);
   max-width: 2000px;
-  margin: 0 auto;
-  /*
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 12px;
-  column-gap: 12px;
-  justify-content: flex-start;
-  margin: 12px 8px;
-  */
-  background-color: rgb(245, 245, 245);
+  border-radius: 16px 16px 0 0;;
+  background-color: rgb(170, 168, 168);
 }
 
 .perfume-card {
@@ -338,24 +340,9 @@ button {
   width: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
-  /*
-  flex: 1 1 min(100px, 25%);
-  min-width: min(200px, 50%);
-  max-width: calc(50% - 24px);
-  */
   border: solid rgb(226, 226, 226);
   border-radius: clamp(4px, 2vw, 8px);
-  /*
-  padding: clamp(5px, 4vw, 10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  */
   transition: transform 0.3s ease;
-  /*
-  position: relative;
-  width: calc(25% - 12px);
-  min-width: 220px;
-  border-radius: 8px;
-  */
   background-color: #ffffff;
 }
 
