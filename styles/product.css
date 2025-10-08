@@ -69,3 +69,27 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield;
 }
+
+.product-quantity {
+  display: flex;
+}
+
+.quantity-minus-button {
+  position: relative;
+  left: -160px;
+  width: 20px;
+}
+
+.quantity-add-button {
+  position: relative;
+  left: -25px;
+  width: 20px;
+}
+
+.quantity-input {
+}
+
+.quantity-button:first-child {
+  position: absolute;
+  left: -20px;
+}

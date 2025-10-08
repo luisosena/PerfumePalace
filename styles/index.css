@@ -26,6 +26,7 @@ body {
 button {
   cursor:pointer;
 }
+
 /*
 .temporary-header{
   position: fixed;
@@ -39,6 +40,7 @@ button {
   border-bottom: 1.5px solid #cfcfcf;
 }
 */
+
 .page-content {
   position: relative;
   /*
