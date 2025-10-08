@@ -9,3 +9,22 @@ p {
   padding: 0;
 }
 
+.page-content {
+  margin: 0 12px;
+  background-color: lightblue;
+  height: 3000px;
+}
+
+.product-container {
+  display: flex;
+}
+
+.product-image-container {
+  background-color: lightpink;
+}
+
+.product-details-container {
+  background-color: rgb(41, 206, 41);
+  width: 100%;
+  height: 320;
+}
