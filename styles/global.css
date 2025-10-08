@@ -1,0 +1,132 @@
+*,
+body,
+main,
+footer,
+section,
+header,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 65px;
+  width: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+/*
+.scrolled {
+  box-shadow: 0 5px 5px rgba(82, 82, 82, 0);
+}
+*/
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.header-logo-button {
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  border: none;
+  background: url('../images/logos/perfume-palace-high-resolution-logo.png') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.header-logo-text {
+  align-items: center;
+  font-family: quicksand;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.header-actions {
+  display: flex;
+  position: absolute;
+  right: 12px;
+  column-gap: 6px;
+  align-items: center;
+  height: 100%;
+}
+
+.header-actions button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.header-actions img {
+  width: 20px;
+  height: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  background: transparent;
+}
+
+.header-actions button:hover {
+  background-color: rgb(203, 203, 203);
+  border-radius: 5px;
+}
+
+.navigation-menu {
+  display: flex;
+  position: absolute;
+  right: 132px;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  height: 24px;
+  width: auto;;
+  padding: 0 12px;
+  margin-left: 18px;
+  box-sizing: border-box;
+  margin-left: clamp(160px, 1vw, 800px);
+}
+
+.navigation-menu button{
+  all: unset;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 2px 6px;
+  font-family: ubuntu;
+  font-weight: 400;
+  font-size: 15px;
+  transition: color 0.2s ease, filter 0.2s ease;
+}
+
+.navigation-menu button:hover {
+  color: rgb(120, 120, 120);
+  filter: invert(45%) sepia(4%) saturate(96%) hue-rotate(19deg) brightness(103%) contrast(92%);
+}
+
+.drop-down-icon {
+  all: unset;
+  position: relative;
+  height: 22px;
+  width: 22px;
+  background-color: transparent;
+}

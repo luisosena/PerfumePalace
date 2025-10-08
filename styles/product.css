@@ -1,0 +1,11 @@
+*,
+body,
+main,
+footer,
+section,
+header,
+p {
+  margin: 0;
+  padding: 0;
+}
+
