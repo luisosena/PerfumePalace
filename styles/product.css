@@ -71,22 +71,26 @@ input[type=number] {
 }
 
 .product-quantity {
-  display: flex;
+  display: inline-flex;
+  border-radius: 4px;
+  overflow: hidden;
+  width: auto;
 }
 
 .quantity-minus-button {
-  position: relative;
-  left: -160px;
-  width: 20px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
 }
 
 .quantity-add-button {
-  position: relative;
-  left: -25px;
-  width: 20px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
 }
 
 .quantity-input {
+  border: none;
 }
 
 .quantity-button:first-child {
