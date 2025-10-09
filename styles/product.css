@@ -81,12 +81,16 @@ input[type=number] {
   border: none;
   background-color: white;
   cursor: pointer;
+  width: 20px;
+  background-color: lightpink;
 }
 
 .quantity-add-button {
   border: none;
   background-color: white;
   cursor: pointer;
+  width: 20px;
+  background-color: lightpink;
 }
 
 .quantity-input {
