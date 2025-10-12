@@ -223,6 +223,10 @@ footer a {
   justify-content: space-between;
 }
 
+.footer-socials li {
+  cursor: pointer;
+}
+
 .footer-socials img{
   width: 26px;
   height: 26px;
