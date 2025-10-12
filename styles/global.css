@@ -1,12 +1,7 @@
-*,
-body,
-main,
-footer,
-section,
-header,
-p {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -21,12 +16,6 @@ p {
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
-
-/*
-.scrolled {
-  box-shadow: 0 5px 5px rgba(82, 82, 82, 0);
-}
-*/
 
 .header-content {
   display: flex;
@@ -177,4 +166,72 @@ p {
   .hamburger-menu-button {
     display: none;
   }
+}
+
+footer {
+  height: auto;
+  margin-top: 20px;
+  font-family: poppins;
+  background-color: rgb(230, 230, 230);
+}
+
+footer ul, li {
+  list-style: none;
+  padding-top: 6px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(90 , 70, 70);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+}
+
+.company-description {
+  width: clamp(250px, 20vw, 100%);
+}
+
+.company-description-header {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.company-description-text { 
+  font-weight: 400;
+  font-size: 13px;
+  padding-top: 8px;
+  color: rgb(90 , 70, 70);
+}
+
+.footer-socials ul{
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.footer-socials img{
+  width: 26px;
+  height: 26px;
+}
+
+.footer-list-header {
+  font-size: 20px;
+}
+
+.copyright-notice {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  color: rgb(90 , 70, 70);
 }
