@@ -1,12 +1,7 @@
-*,
-body,
-main,
-footer,
-section,
-header,
-p {
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .page-content {
@@ -17,13 +12,17 @@ p {
 
 .product-container {
   display: flex;
+  justify-content: center;
   column-gap: 20px;
 }
 
 .product-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   position: relative;
-  display: inline-block;
   border-radius: 6px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -42,14 +41,14 @@ p {
 
 .product-image {
   object-fit: cover;
-  width: 100%;
+  width: clamp(250px, 100%, 600px);
   height: 100%;
 }
 
 .product-details-container {
+  flex: 1;
   background-color: rgb(41, 206, 41);
   width: 100%;
-  height: 320;
 }
 
 .product-brand {
@@ -123,4 +122,10 @@ input[type=number] {
 .quantity-button:first-child {
   position: absolute;
   left: -20px;
+}
+
+@media (max-width: 768px){
+  .product-container {
+    flex-direction: column;
+  }
 }
