@@ -177,7 +177,7 @@ footer {
 
 footer ul, li {
   list-style: none;
-  padding-top: 6px;
+  padding-top: 3px;
 }
 
 footer a {
@@ -188,11 +188,14 @@ footer a {
 .footer-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  column-gap: 20px;
+  column-gap: 10vw;
   row-gap: 20px;
-  padding: 12px 20px;
+  padding: 30px 20px;
   flex-wrap: wrap;
+}
+
+.footer-list-header {
+  font-size: 20px;
 }
 
 .company-description {
@@ -207,7 +210,7 @@ footer a {
 
 .company-description-text { 
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   padding-top: 8px;
   color: rgb(90 , 70, 70);
 }
@@ -223,10 +226,6 @@ footer a {
 .footer-socials img{
   width: 26px;
   height: 26px;
-}
-
-.footer-list-header {
-  font-size: 20px;
 }
 
 .copyright-notice {
