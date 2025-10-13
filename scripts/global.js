@@ -25,11 +25,53 @@ export const headerHTML = `
   </div>
 `;
 
+export const footerHTML = `
+  <div class="footer-content">
+          <div class="company-description">
+            <span class="company-description-header">PERFUME PALACE</span>
+            <p class="company-description-text">The world's largest collection of authentic fragrances curated for every mood and moment.</p>
+            <div class="footer-socials">
+              <ul>
+                <li><img src="../images/icons/instagram-icon.svg" alt="Instagram"></li>
+                <li><img src="../images/icons/facebook-icon.svg" alt="Facebook"></li>
+                <li><img src="../images/icons/twitter-icon.svg" alt="Twitter"></li>
+                <li><img src="../images/icons/whatsapp-icon.svg" alt="Whatsapp"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-shop-links">
+            <p class="footer-list-header footer-shop-list-header">Shop</p>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">New Arrivals</a></li>
+              <li><a href="product.html">Perfumes</a></li>
+              <li><a href="product.html">Fragrances</a></li>
+            </ul>
+          </div>
+          <div class="customer-service-links">
+            <p class="footer-list-header customer-service-list-header">Customer Service</p>
+            <ul>
+              <li><a href="product.html">Contact Us</a></li>
+              <li><a href="product.html">About Us</a></li>
+              <li><a href="product.html">FAQ</a></li>
+              <li><a href="product.html">Shipping</a></li>
+              <li><a href="product.html">Returns</a></li>
+            </ul>
+          </div>
+        </div>
+`
 
 export function mountHeader(root = document) {
   const container = root.querySelector('.header-js');
   if (container) {
     container.innerHTML = headerHTML;
+  }
+}
+
+export function mountFooter(root = document) {
+  const container = root.querySelector('.footer-js');
+  if (container) {
+    container.innerHTML = footerHTML;
   }
 }
 
