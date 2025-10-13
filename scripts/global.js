@@ -1,4 +1,42 @@
-const headerHTML = document.querySelector('.header-js').innerHTML;
-console.log(headerHTML);
+export const headerHTML = `
+  <div class="header-content">
+    <div class="header-logo-text">
+      <span>PERFUME PALACE</span>
+    </div>
+    <div class="navigation-menu">
+      <button>Collections <img src="../images/icons/drop-down-icon.svg" alt="Drop Down Menu" class="drop-down-icon"></button>
+      <button>Brands <img src="../images/icons/drop-down-icon.svg" alt="Drop Down Menu" class="drop-down-icon"></button>
+      <button>Contact Us</button>
+    </div>
+    <div class="header-actions">
+      <button class="heart-icon-button">
+        <img src="../images/icons/heart-icon.svg" alt="Heart" class="heart-icon">
+      </button>
+      <button class="user-icon-button">
+        <img src="../images/icons/user-icon.svg" alt="User" class="user-icon">
+      </button>
+      <button class="cart-icon-button">
+        <img src="../images/icons/cart-icon.svg" alt="Cart" class="cart-icon">
+      </button>
+    </div>
+    <button class="hamburger-menu-button">
+      <img src="../images/icons/hamburger-menu-icon.svg" alt="Hamburger Menu" class="hamburger-menu-icon">
+    </button>
+  </div>
+`;
 
-export default headerHTML;
+
+export function mountHeader(root = document) {
+  const container = root.querySelector('.header-js');
+  if (container) {
+    container.innerHTML = headerHTML;
+  }
+}
+
+if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => mountHeader());
+  } else {
+    mountHeader();
+  }
+}
