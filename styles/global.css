@@ -16,6 +16,7 @@
   width: 100%;
   padding: 0 12px;
   box-sizing: border-box;
+  border-bottom: 1.5px solid #cfcfcf;
   background-color: rgb(255, 255, 255);
 }
 
