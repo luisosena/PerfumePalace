@@ -11,29 +11,10 @@ button {
   cursor:pointer;
 }
 
-/*
-.temporary-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: lightblue;
-  height: 47.2px;
-  width: 100%;
-  z-index: 1000;
-  border-bottom: 1.5px solid #cfcfcf;
-}
-*/
-
 .page-content {
   position: relative;
-  /*
-  margin-top: 47.2px;
-  */
   max-width: 100%;
 }
-
-
 
 .hero-container {
   padding: 0 12px;

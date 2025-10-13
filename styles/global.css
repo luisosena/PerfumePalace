@@ -40,11 +40,18 @@
   border-radius: 50%;
 }
 
-.header-logo-text {
+.header-logo-text a {
   align-items: center;
   font-family: quicksand;
   font-weight: 600;
   font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-logo-text a:hover {
+  color: rgb(120, 120, 120);
+  cursor: pointer;
 }
 
 .navigation-menu {

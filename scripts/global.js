@@ -1,7 +1,7 @@
 export const headerHTML = `
   <div class="header-content">
     <div class="header-logo-text">
-      <span>PERFUME PALACE</span>
+      <a href="index.html">PERFUME PALACE</a>
     </div>
     <div class="navigation-menu">
       <button>Collections <img src="../images/icons/drop-down-icon.svg" alt="Drop Down Menu" class="drop-down-icon"></button>
