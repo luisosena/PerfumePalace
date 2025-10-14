@@ -6,7 +6,8 @@
 
 .page-content {
   margin: 0 12px;
-  height: 3000px;
+  height: auto;
+  font-family: poppins;
 }
 
 .product-container {
@@ -215,10 +216,7 @@ input[type=number] {
 }
 
 .recommended-products-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 12px;
-  height: 450px;
+  height: auto;
   width: 100%;
   margin-top: 20px;
   border-radius: 12px;
