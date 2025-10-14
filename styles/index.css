@@ -17,6 +17,9 @@ button {
 }
 
 .hero-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: clamp(12px, 2vw, 30px);
   padding: 0 12px;
   margin-top: 8px;
 }
@@ -27,8 +30,7 @@ button {
   height: 340px;
   padding: 20px 0;
   border-radius: 16px;
-  color: rgb(255, 255, 255);
-  background-color: hsla(255, 76%, 57%, 0.95);
+  color: rgb(0, 0, 0);
 }
 
 .hero-content {
@@ -82,7 +84,7 @@ button {
   width: clamp(250px, 75vw, 320px);
   padding-left: 9px;
   border: none;
-  outline: none;
+  outline: solid 1.5px black;
   border-radius: 18px;
   background-color: rgb(255, 255, 255);
 }
@@ -114,10 +116,12 @@ button {
   column-gap: 20px;
   margin-top: 20px;
   font-family: poppins;
-  font-weight: 600;
-  padding:7px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 7px 20px;
+  height: 36px;
   border: none;
-  border-radius: 12px;
+  border-radius: 18px;
   color:rgb(255, 255, 255);
   background-color: rgb(10, 10, 10);
 }
@@ -133,13 +137,42 @@ button {
   height: auto;
   border-radius: 12px;
   overflow: hidden;
-  width: clamp(200px, 100%, 400px);
+  width: 100%;
+  background-color: hsla(255, 76%, 57%, 0.95);
 }
 
+/*
 .hero-image {
   height: 100%;
-  font-weight: 100%;
+  width: 100%;
   object-fit:fill;
+}
+*/
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    column-gap: 12px;
+    align-items: center;
+  }
+
+  .hero-content {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .hero-details, .hero-buttons p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .hero-image-container {
+    width: 90vw;
+    height: 450px;
+  }
 }
 
 .collections-container {
