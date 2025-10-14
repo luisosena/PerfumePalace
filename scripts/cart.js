@@ -9,6 +9,4 @@ mountHeader(document, '../');
 console.log(getHeaderHTML('../'));
 */
 
-console.log(headerHTML);
-
 mountFooter(document, `../`);
