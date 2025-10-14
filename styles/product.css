@@ -28,6 +28,7 @@
   display: flex;
   justify-content: center;
   width: clamp(100px, 100%, 600px);
+  height: clamp(100px, 100%, 600px);
   border-radius: 6px;
   overflow: hidden;
   background-color: rgb(245, 245, 255);
@@ -39,7 +40,7 @@
   top: 0;
   left: 0;
   width: clamp(100px, 100%, 600px);
-  height: 100%;
+  height: clamp(100px, 100%, 600px);
   background-color: rgba(0, 0, 0, 0.05);
   mix-blend-mode: multiply;
   pointer-events: none;
@@ -85,6 +86,7 @@
   border-radius: 12px;
   background-color: rgb(41, 206, 41);
   width: 100%;
+  height: auto;
 }
 
 .product-brand {
@@ -200,4 +202,25 @@ input[type=number] {
   border-radius: 20px;
   color:rgb(255, 255, 255);
   background-color: rgb(10, 10, 10);
+}
+
+.detailed-product-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  height: 450px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: beige;
+}
+
+.recommended-products-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  height: 450px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 12px;
+  background-color: rgb(157, 211, 236);
 }
