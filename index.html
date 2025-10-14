@@ -9,40 +9,11 @@
     <title>Perfume Palace</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/global.css">
-    <script src="../scripts/global.js" type="module" defer></script>
+    <script src="scripts/include.js" defer></script>
   </head>
   <body>
-    <header class="temporary-header"></header>
+    <header data-include="components/header.html"></header>
     <div class="page-content">
-      <div class="header header-js">
-        <div class="header-content">
-          <div class="header-logo-text">
-            <a href="index.html">PERFUME PALACE</a>
-          </div>
-          <div class="navigation-menu">
-            <button>Collections <img src="images/icons/drop-down-icon.svg" alt="Drop Down Menu" class="drop-down-icon">
-            </button>
-            <button>Brands <img src="images/icons/drop-down-icon.svg" alt="Drop Down Menu" class="drop-down-icon">
-            </button>
-            <button>Contact Us 
-            </button>
-          </div>
-          <div class="header-actions">
-            <button class="heart-icon-button">
-              <img src="images/icons/heart-icon.svg" alt="Heart" class="heart-icon">
-            </button>
-            <button class="user-icon-button">
-              <img src="images/icons/user-icon.svg" alt="User" class="user-icon">
-            </button>
-            <button class="cart-icon-button">
-              <img src="images/icons/cart-icon.svg" alt="Cart" class="cart-icon">
-            </button>
-          </div>
-          <button class="hamburger-menu-button">
-            <img src="images/icons/hamburger-menu-icon.svg" alt="Hamburger Menu" class="hamburger-menu-icon">
-          </button>
-        </div>
-      </div>
       <div class="hero-container">
         <div class="hero">
           <div class="hero-content">
@@ -217,44 +188,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer footer-js">
-        <div class="footer-content">
-          <div class="company-description">
-            <span class="company-description-header">PERFUME PALACE</span>
-            <p class="company-description-text">The world's largest collection of authentic fragrances curated for every mood and moment.</p>
-            <div class="footer-socials">
-              <ul>
-                <li><img src="images/icons/instagram-icon.svg" alt="Instagram"></li>
-                <li><img src="images/icons/facebook-icon.svg" alt="Facebook"></li>
-                <li><img src="images/icons/twitter-icon.svg" alt="Twitter"></li>
-                <li><img src="images/icons/whatsapp-icon.svg" alt="Whatsapp"></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-shop-links">
-            <p class="footer-list-header footer-shop-list-header">Shop</p>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="product.html">New Arrivals</a></li>
-              <li><a href="product.html">Perfumes</a></li>
-              <li><a href="product.html">Fragrances</a></li>
-            </ul>
-          </div>
-          <div class="customer-service-links">
-            <p class="footer-list-header customer-service-list-header">Customer Service</p>
-            <ul>
-              <li><a href="product.html">Contact Us</a></li>
-              <li><a href="product.html">About Us</a></li>
-              <li><a href="product.html">FAQ</a></li>
-              <li><a href="product.html">Shipping</a></li>
-              <li><a href="product.html">Returns</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright-notice">
-          <p>&#9400; 2025 PerfumePalace. All rights reserved.</p>
-        </div>
-      </footer>
+      <footer data-include="components/footer.html"></footer>
     </div>
     <script src="scripts/index.js"></script>
   </body>
