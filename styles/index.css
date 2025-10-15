@@ -92,7 +92,7 @@ button {
 .hero-details {
   display: flex;
   flex-direction: column;
-  width: clamp(250px, 500px, 100%);
+  width: clamp(370px, 500px, 100%);
   margin-top: 18px;
 }
 
@@ -134,6 +134,7 @@ button {
   position: relative;
   display: flex;
   justify-content: center;
+  aspect-ratio: 1 / 1;
   height: auto;
   border-radius: 12px;
   overflow: hidden;
