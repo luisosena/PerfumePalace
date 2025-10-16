@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/luisosena/PerfumePalace/issues"
   },
-  "homepage": "https://github.com/luisosena/PerfumePalace#readme"
+  "homepage": "https://github.com/luisosena/PerfumePalace#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
