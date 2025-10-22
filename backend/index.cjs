@@ -50,10 +50,3 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 app.get('/', (req, res) => {
     res.send("Our API");
 });
-
-/*
-fetch(process.env.MONGO_URI)
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
-*/
