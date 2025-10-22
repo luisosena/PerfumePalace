@@ -47,6 +47,8 @@ app.get('/api/school/student', async (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
-app.get('/', (req, res) => {
-    res.send("Our API");
+app.get('/api/school', (req, res) => {
+    const students = Student.find();
+    console.log(students);
+    res.json(students);;
 });
