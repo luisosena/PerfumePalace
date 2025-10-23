@@ -1,13 +1,13 @@
-const API_URL = "http://localhost:3000/api/students";
+const API_URL = "http://localhost:3000/api/perfumes";
 
-let students = [];
+let perfumes = [];
 
-async function fetchStudents() {
+async function fetchPerfumes() {
     try {
         const response = await fetch(API_URL);
         const data = await response.json();
-        data.forEach(student => {
-            students.push(student);
+        data.forEach(perfume => {
+            perfumes.push(perfume);
         })
 
     } catch (error) {
@@ -15,17 +15,21 @@ async function fetchStudents() {
     }
 }
 
-const studentsElement = document.getElementById("students");
-studentsElement.innerHTML = ``;
+const perfumeElement = document.getElementById("perfumes");
+perfumeElement.innerHTML = ``;
 
-function renderStudents() {
-  students.forEach(student => {
-    studentsElement.innerHTML += `
-    <div class="student">
-      <p>Student Name: ${student.name}</p>
-      <p>Student Age: ${student.age}</p>
-      <p>Student Grade: ${student.grade}</p>
-      <p>Student Email: ${student.email}</p>
+function renderPerfumes() {
+  perfumes.forEach(perfume => {
+    perfumeElement.innerHTML += `
+    <div class="perfume-card-2">
+      <div class="perfume-image-container">
+        <img class="perfume-image" src="./backend/${perfume.imagefilepath}" alt="Perfume">
+      </div>
+      <div class="perfume-card-content">
+        <p class="perfume-name">${perfume.name}</p>
+        <p class="perfume-brand">${perfume.brand}</p>
+        <p class="perfume-description">${perfume.description}</p>
+      </div>
     </div>
     `;
   })
@@ -33,12 +37,12 @@ function renderStudents() {
 
 
 
-fetchStudents()
+fetchPerfumes()
   .then(() => {
-    console.log(students);
+    console.log(perfumes);
   })
   .then(() => {
-    renderStudents();
+    renderPerfumes();
   })
   .catch(error => {
     console.error(error);
