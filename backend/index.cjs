@@ -19,7 +19,6 @@ app.use(express.static('public')); // Serve frontend files
 const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI;
 
-
 mongoose.connect(MONGO_URI)
     .then(() => {
     console.log("Connected to MongoDB");
@@ -27,10 +26,11 @@ mongoose.connect(MONGO_URI)
     .catch((error) => {
     console.log(error);})
 
+
 const perfumeSchema = new mongoose.Schema({
   brand: String,
   name: String,
-  image: String,
+  imagefilepath: String,
   description: String,
   price: Number,
   quantity: Number,
