@@ -2,9 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.cjs",
+  "main": "server.cjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.cjs"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,7 @@
     "mongoose": "^8.19.1",
     "multer": "^2.0.2"
   },
-  "devDependencies": {
+  "devDependencies": {  
     "nodemon": "^3.1.10"
   }
 }
