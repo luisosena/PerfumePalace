@@ -142,14 +142,6 @@ button {
   background-color: hsla(255, 76%, 57%, 0.95);
 }
 
-/*
-.hero-image {
-  height: 100%;
-  width: 100%;
-  object-fit:fill;
-}
-*/
-
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
