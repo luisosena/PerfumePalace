@@ -34,7 +34,7 @@ const studentSchema = new mongoose.Schema({
 const Student = mongoose.model('Student', studentSchema);
 
 
-app.get('/api/school/students', async (req, res) => {
+app.get('/api/students', async (req, res) => {
   try {
     const students = await Student.find();
     console.log(students);
@@ -45,15 +45,3 @@ app.get('/api/school/students', async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-
-app.get('/api/school', async (req, res) => {
-    const students = await Student.find();
-    console.log(students);
-    res.json(students);;
-});
-
-async function consoleStudents() {
-    const students = await Student.find();
-    console.log(students);
-}
