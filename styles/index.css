@@ -318,21 +318,3 @@ button {
   font-weight: 400;
   font-size: 15px;
 }
-
-.perfumes {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  background-color: blanchedalmond;
-  height: auto;
-  width: 100%;
-}
-
-.perfume-card-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background-color: blanchedalmond;
-  height: 200px;
-  width: 150px;
-}
