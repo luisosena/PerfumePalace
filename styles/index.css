@@ -222,7 +222,7 @@ button {
 
 .perfumes-display-container-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(max(250px, 15%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(max(190px, 22%), 1fr));
   gap: clamp(7px, 1vw, 11px);
   padding: clamp(10px, 4vw, 20px);
   border-radius: 20px 20px 0 0;;
@@ -246,7 +246,6 @@ button {
   width: 28px;
   border: none;
   border-radius: 14px;
-  background-color: black;
   cursor: pointer;
   transition: all 0.2s ease;
 }

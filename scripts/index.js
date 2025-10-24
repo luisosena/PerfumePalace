@@ -1,49 +1,32 @@
-const API_URL = "http://localhost:3000/api/perfumes";
+const API_URL = "http://localhost:3000/api/Perfumes";
 
-let perfumes = [];
-
-async function fetchPerfumes() {
-    try {
-        const response = await fetch(API_URL);
-        const data = await response.json();
-        data.forEach(perfume => {
-            perfumes.push(perfume);
-        })
-
-    } catch (error) {
-        console.error(error);
-    }
+async function fetchProducts() {
+    const response = await fetch(API_URL);
+    return await response.json();
 }
 
-const perfumeElement = document.getElementById("perfumes");
-perfumeElement.innerHTML = ``;
-
-function renderPerfumes() {
-  perfumes.forEach(perfume => {
-    perfumeElement.innerHTML += `
-    <div class="perfume-card-2">
-      <div class="perfume-image-container">
-        <img class="perfume-image" src="./backend/${perfume.imagefilepath}" alt="Perfume">
-      </div>
-      <div class="perfume-card-content">
-        <p class="perfume-name">${perfume.name}</p>
-        <p class="perfume-brand">${perfume.brand}</p>
-        <p class="perfume-description">${perfume.description}</p>
-      </div>
-    </div>
-    `;
+function renderProducts(products) {
+  const perfumesCardsElement = document.getElementById("perfume-cards");
+  perfumesCardsElement.innerHTML = ``;
+  products.forEach(product => {
+    perfumesCardsElement.innerHTML += `
+    <div class="perfume-card">
+            <button class="perfume-heart">
+              <img src="./images/icons/heart-icon.svg" alt="Heart" class="perfume-heart-icon">
+            </button>
+            <div class="perfume-image-container">
+            <img src="${product.imagefilepath}" alt="Perfume" class="perfume-image">
+            </div>
+            <div class="perfume-card-content">
+            <p class="perfume-brand">${product.brand}</p>
+            <p class="perfume-name">${product.name}</p>
+            <p class="perfume-price">$${product.price}</p>
+            </div>
+          </div>`
   })
 }
 
-
-
-fetchPerfumes()
-  .then(() => {
-    console.log(perfumes);
-  })
-  .then(() => {
-    renderPerfumes();
-  })
-  .catch(error => {
-    console.error(error);
+fetchProducts()
+  .then( products => {
+  renderProducts(products);
 });
