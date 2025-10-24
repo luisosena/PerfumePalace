@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/product.css">
     <script src="../scripts/include.js" defer></script>
+    <script src="../scripts/index.js" defer></script>
   </head>
   <body>
     <header data-include="../components/header.html"></header>
@@ -51,112 +52,7 @@
       </div>
       <div class="recommended-products-container">
         <div class="recommended-products-header">You may also like</div>
-        <div class="perfumes-display-container-content">
-          <div class="perfume-card">
-            <button class="perfume-heart">
-              <img src="..\images\icons\heart-icon.svg" alt="Heart" class="perfume-heart-icon">
-            </button>
-            <div class="perfume-image-container">
-            <img src="..\images\photos\perfume -1-image.jpg" alt="Perfume" class="perfume-image">
-            </div>
-            <div class="perfume-card-content">
-            <p class="perfume-brand">AFNAN</p>
-            <p class="perfume-name">Supremacy Collector's Edition</p>
-            <p class="perfume-price">$100</p>
-            </div>
-          </div>
-          <div class="perfume-card">
-            <button class="perfume-heart">
-              <img src="..\images\icons\heart-icon.svg" alt="Heart" class="perfume-heart-icon">
-            </button>
-            <div class="perfume-image-container">
-            <img src="..\images\photos\perfume-2-image.jpg" alt="Perfume" class="perfume-image">
-            </div>
-              <div class="perfume-card-content">
-              <p class="perfume-brand">FRENCH AVENUE</p>
-              <p class="perfume-name">Liquid Brun</p>
-              <p class="perfume-price">$100</p>
-            </div>
-          </div>
-          <div class="perfume-card">
-            <button class="perfume-heart">
-              <img src="..\images\icons\heart-icon.svg" alt="Heart" class="perfume-heart-icon">
-            </button>
-            <div class="perfume-image-container">
-            <img src="..\images\photos\perfume-3-image.jpg" alt="Perfume" class="perfume-image">
-            </div>
-            <div class="perfume-card-content">
-            <p class="perfume-brand">LATAFFA</p>
-            <p class="perfume-name">Khamrah Qahwa</p>
-            <p class="perfume-price">$100</p>
-            </div>
-          </div>
-          <div class="perfume-card">
-            <button class="perfume-heart">
-              <img src="..\images\icons\heart-icon.svg" alt="Heart" class="perfume-heart-icon">
-            </button>
-            <div class="perfume-image-container">
-            <img src="..\images\photos\perfume-4-image.jpg" alt="Perfume" class="perfume-image">
-            </div>
-            <div class="perfume-card-content">
-            <p class="perfume-brand">GULF ORCHID</p>
-            <p class="perfume-name">Mango Ice</p>
-            <p class="perfume-price">$100</p>
-            </div>
-          </div>
-          <div class="perfume-card">
-            <button class="perfume-heart">
-              <img src="..\images\icons\heart-icon.svg" alt="Heart" class="perfume-heart-icon">
-            </button>
-            <div class="perfume-image-container">
-            <img src="..\images\photos\perfume -1-image.jpg" alt="Perfume" class="perfume-image">
-            </div>
-            <div class="perfume-card-content">
-            <p class="perfume-brand">AFNAN</p>
-            <p class="perfume-name">Supremacy Collector's Edition</p>
-            <p class="perfume-price">$100</p>
-            </div>
-          </div>
-          <div class="perfume-card">
-            <button class="perfume-heart">
-              <img src="..\images\icons\heart-icon.svg" alt="Heart" class="perfume-heart-icon">
-            </button>
-            <div class="perfume-image-container">
-            <img src="..\images\photos\perfume-2-image.jpg" alt="Perfume" class="perfume-image">
-            </div>
-            <div class="perfume-card-content">
-            <p class="perfume-brand">FRENCH AVENUE</p>
-            <p class="perfume-name">Liquid Brun</p>
-            <p class="perfume-price">$100</p>
-            </div>
-          </div>
-          <div class="perfume-card">
-            <button class="perfume-heart">
-              <img src="..\images\icons\heart-icon.svg" alt="Heart" class="perfume-heart-icon">
-            </button>
-            <div class="perfume-image-container">
-            <img src="..\images\photos\perfume-3-image.jpg" alt="Perfume" class="perfume-image">
-            </div>
-            <div class="perfume-card-content">
-            <p class="perfume-brand">LATAFFA</p>
-            <p class="perfume-name">Khamrah Qahwa</p>
-            <p class="perfume-price">$100</p>
-            </div>
-          </div>
-          <div class="perfume-card">
-            <button class="perfume-heart">
-              <img src="..\images\icons\heart-icon.svg" alt="Heart" class="perfume-heart-icon">
-            </button>
-            <div class="perfume-image-container">
-            <img src="..\images\photos\perfume-4-image.jpg" alt="Perfume" class="perfume-image">
-            </div>
-            <div class="perfume-card-content">
-            <p class="perfume-brand">GULF ORCHID</p>
-            <p class="perfume-name">Mango Ice</p>
-            <p class="perfume-price">$100</p>
-            </div>
-          </div>
-        </div>
+        <div id="perfume-cards" class="perfumes-display-container-content"></div>
       </div>
     </div>
     <footer data-include="../components/footer.html"></footer>

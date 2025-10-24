@@ -12,7 +12,7 @@ function renderProducts(products) {
     perfumesCardsElement.innerHTML += `
     <div class="perfume-card">
             <button class="perfume-heart">
-              <img src="./images/icons/heart-icon.svg" alt="Heart" class="perfume-heart-icon">
+              <img src="/images/icons/heart-icon.svg" alt="Heart" class="perfume-heart-icon">
             </button>
             <div class="perfume-image-container">
             <img src="${product.imagefilepath}" alt="Perfume" class="perfume-image">
