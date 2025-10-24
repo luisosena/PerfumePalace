@@ -13,8 +13,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/uploads', express.static('uploads')); // Serve uploaded files statically
-app.use(express.static('public')); // Serve frontend files
+app.use('/uploads', express.static('uploads'));
+app.use(express.static('public'));
 
 const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI;
