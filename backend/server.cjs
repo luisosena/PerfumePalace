@@ -42,7 +42,6 @@ const Perfume = mongoose.model('Perfume', perfumeSchema);
 app.get('/api/Perfumes', async (req, res) => {
   try {
     const perfumes = await Perfume.find();
-    console.log(perfumes);
     res.json(perfumes);
   } catch (error) {
     res.status(500).json({ message: error.message });
