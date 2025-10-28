@@ -71,6 +71,19 @@
   background-color: rgb(185, 222, 255);
 }
 
+.cart-item-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.cart-item-image {
+  display: none;
+  object-fit: contain;
+}
+
 .order-summary {
   display: flex;
   width: 36vw;
