@@ -138,10 +138,23 @@ input[type=number] {
 
 .order-summary {
   display: flex;
+  flex-direction: column;
   width: 36vw;
   height: auto;
+  padding: 12px;
   border-radius: 12px;
   background-color: rgb(235, 235, 147);
+}
+
+.order-summary-details {
+  margin-top: 20px;
+}
+
+.order-amount-details p {
+}
+
+.order-summary-details .amount{
+  margin-left: auto;
 }
 
 .checkout-section-container {
